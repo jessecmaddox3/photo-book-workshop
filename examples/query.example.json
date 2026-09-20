@@ -1,0 +1,12 @@
+{
+  "allPeople": [],
+  "anyPeople": [],
+  "albums": [],
+  "terms": [],
+  "boostTerms": [],
+  "bonusPeople": [],
+  "personBonus": 1,
+  "includeNonPhotos": false,
+  "dateDiversity": false,
+  "limit": 60
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Built only from the wholly invented bundled book and generated example artwork.",
+  "bookHash": "04b699cddf5c09f5ddf9e4f7edb4f637e89b6a96ac34e93c765ff82ce252b873",
+  "outputs": [
+    {
+      "path": "docs/assets/example-garden.png",
+      "sha256": "f45489b434f69adfb7448b51123d7be6d25379eafe729384395eb6327853031f"
+    },
+    {
+      "path": "docs/assets/example-book.pdf",
+      "sha256": "8985fa2b160dd7741abe6f521d4a5e0be57e83411cafa6a103d9138a71f6f51c"
+    }
+  ]
+}

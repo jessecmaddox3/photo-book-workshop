@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "captions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "url": {"type": "string"},
+          "caption": {"type": "string"},
+          "keywords": {"type": "array", "items": {"type": "string"}},
+          "unnamed_people": {"type": "array", "items": {"type": "string"}},
+          "pets": {"type": "array", "items": {"type": "string"}},
+          "quality": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "sharpness": {"type": "string", "enum": ["good", "fair", "poor"]},
+              "exposure": {"type": "string", "enum": ["good", "fair", "poor"]},
+              "eyes_open": {"type": "string", "enum": ["yes", "no", "mixed", "not_visible", "not_applicable"]},
+              "faces_uncut": {"type": "string", "enum": ["yes", "no", "mixed", "not_visible", "not_applicable"]}
+            },
+            "required": ["sharpness", "exposure", "eyes_open", "faces_uncut"]
+          },
+          "print_recommendation": {"type": "boolean"},
+          "print_reason": {"type": "string"},
+          "hero_candidate": {"type": "boolean"},
+          "composition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "subject_position": {"type": "string"},
+              "square_crop": {"type": "string", "enum": ["good", "possible", "poor"]},
+              "headroom": {"type": "string"}
+            },
+            "required": ["subject_position", "square_crop", "headroom"]
+          },
+          "visible_text": {"type": "array", "items": {"type": "string"}},
+          "non_photo": {"type": "boolean"},
+          "non_photo_type": {"type": ["string", "null"]}
+        },
+        "required": [
+          "url", "caption", "keywords", "unnamed_people", "pets", "quality",
+          "print_recommendation", "print_reason", "hero_candidate", "composition",
+          "visible_text", "non_photo", "non_photo_type"
+        ]
+      }
+    }
+  },
+  "required": ["captions"]
+}

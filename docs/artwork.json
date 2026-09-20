@@ -1,0 +1,65 @@
+[
+  {
+    "name": "hero",
+    "path": "docs/assets/hero.png",
+    "prompt": "Create one polished wide 2:1 illustrated mini sell-page banner for an open-source app called 'Photo Book Workshop'. Main readable headline exactly 'Photo Book Workshop'. Smaller line exactly 'Find the photos. Tell the story. Make the book.' Three small tasteful labels near bottom 'Gather' 'Choose' 'Create'. Warm editorial paper-cut gouache illustration on creamy paper, apricot and sky blue and deep midnight accents. A sunlit desk with an open gorgeous photo book containing whimsical illustrated gardens and birds, a fan of little image prints showing a toy hot-air balloon, a red bicycle, a lighthouse, a friendly fox and a greenhouse, pencil and caption strips. Sophisticated charming playful collage, strong legible typography, generous breathing room, deliberate composition. Entirely imaginary scene. No people or faces, no real photo sources, no real addresses or personal records, no brand logos. This is original promotional artwork and not a screenshot of the app.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "df6b678fc8f944abe01db6284808e1439ad238f037eab9ccf9cb5de3f64cf9de"
+  },
+  {
+    "name": "greenhouse",
+    "path": "src/photobook_workshop/demo/assets/greenhouse.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. A little glass greenhouse overflowing with fern leaves and orange flowers, sunny garden, a watering can, no people. Landscape 3:2. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "b7a2f66dd0a0d816430735fec12d019049dcc3a10f1b9b1f8da3c97f7e1f8688"
+  },
+  {
+    "name": "balloon",
+    "path": "src/photobook_workshop/demo/assets/balloon.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. A striped orange and ivory hot-air balloon drifting above a patchwork of green fields, distant tiny imaginary hills, soft clouds. Portrait 2:3. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "88c31f9ac06c83c9c43a8a38a50b77e8da167676242b03fd2fb8a7ae8606f67f"
+  },
+  {
+    "name": "lighthouse",
+    "path": "src/photobook_workshop/demo/assets/lighthouse.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. A blue and white lighthouse on a tiny rocky island surrounded by jade water, two gulls and a little red rowboat, sunny sky. Square. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "537ff8e2fc2d39f829e1f80ede9652cf4c9b0b22219c42e40c4fa338c66e463e"
+  },
+  {
+    "name": "bicycle",
+    "path": "src/photobook_workshop/demo/assets/bicycle.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. A coral red bicycle leaning against a pale wall with a basket of yellow flowers and a blue watering can, leafy shadows. Landscape 3:2. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "7c99418d6e4838ff2df9d739e5cd578f2b5b755a8b2f9305fa118f3035a892c0"
+  },
+  {
+    "name": "fox",
+    "path": "src/photobook_workshop/demo/assets/fox.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. A gentle red fox sitting amongst blue wildflowers, looking toward a distant hill under a peach sunrise, no other animals. Portrait 2:3. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "b21e26ac2635debc6a018bb43ec4fe493af148033495e885018ac8aea94d273f"
+  },
+  {
+    "name": "pond",
+    "path": "src/photobook_workshop/demo/assets/pond.png",
+    "prompt": "Original gouache and cut-paper picture-book illustration. Lily pads and white water lilies in a still garden pond, a little wooden bridge and green willow leaves, a dragonfly. Landscape 3:2. Warm sophisticated editorial children's book art with visible paper grain, natural shapes, rich but quiet colors, generous composition with no essential subject near edges. Entirely invented story setting, no real reference images, no identifiable locations, no text, no logos, no people or family likenesses. Produce one complete standalone artwork, no panel borders or collage.",
+    "provider": "ChatGPT built-in image generation",
+    "date": "2026-09-19",
+    "reference_images": [],
+    "sha256": "b14e1d69c08c0916332ea42d3995ead2cbeb88cc6e288f952cc6d4950ce0cb2b"
+  }
+]

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ttf binary
+src/photobook_workshop/fonts/*-OFL.txt -whitespace

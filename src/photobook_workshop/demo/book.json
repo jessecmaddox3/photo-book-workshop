@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "bookId": "small-days-invented",
+  "title": "Small days, big stories",
+  "physical": {
+    "width": 8,
+    "height": 8,
+    "bleed": 0,
+    "safe": 0.22,
+    "dpi": 180
+  },
+  "assets": [
+    {
+      "id": "greenhouse",
+      "path": "normalized/b7a2f66dd0a0d816430735fec12d019049dcc3a10f1b9b1f8da3c97f7e1f8688-normalized-v1.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "20707db5bf1a542e7e70463a1e77ae757bea812e4c971bd5753065152d630d7f",
+      "source_sha256": "b7a2f66dd0a0d816430735fec12d019049dcc3a10f1b9b1f8da3c97f7e1f8688",
+      "alt": "Invented greenhouse illustration"
+    },
+    {
+      "id": "balloon",
+      "path": "normalized/88c31f9ac06c83c9c43a8a38a50b77e8da167676242b03fd2fb8a7ae8606f67f-normalized-v1.jpg",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "bccda16c1193cad1b6f0d18a6e7b3b4138e2aed944f91e7632185815f68c06f8",
+      "source_sha256": "88c31f9ac06c83c9c43a8a38a50b77e8da167676242b03fd2fb8a7ae8606f67f",
+      "alt": "Invented balloon illustration"
+    },
+    {
+      "id": "lighthouse",
+      "path": "normalized/537ff8e2fc2d39f829e1f80ede9652cf4c9b0b22219c42e40c4fa338c66e463e-normalized-v1.jpg",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "025b05184043739a5b16d05cb346927a40239c9e149e7291519a709347406114",
+      "source_sha256": "537ff8e2fc2d39f829e1f80ede9652cf4c9b0b22219c42e40c4fa338c66e463e",
+      "alt": "Invented lighthouse illustration"
+    },
+    {
+      "id": "bicycle",
+      "path": "normalized/7c99418d6e4838ff2df9d739e5cd578f2b5b755a8b2f9305fa118f3035a892c0-normalized-v1.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1c3e71c97e2cc5f48b8e6c163719bb0da38c8db96394d4233a923838929a2459",
+      "source_sha256": "7c99418d6e4838ff2df9d739e5cd578f2b5b755a8b2f9305fa118f3035a892c0",
+      "alt": "Invented bicycle illustration"
+    },
+    {
+      "id": "fox",
+      "path": "normalized/b21e26ac2635debc6a018bb43ec4fe493af148033495e885018ac8aea94d273f-normalized-v1.jpg",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d8a9e95d32e4e124a295c9fa81da47ebd448b4459127b06cc36bd22ac947cc98",
+      "source_sha256": "b21e26ac2635debc6a018bb43ec4fe493af148033495e885018ac8aea94d273f",
+      "alt": "Invented fox illustration"
+    },
+    {
+      "id": "pond",
+      "path": "normalized/b14e1d69c08c0916332ea42d3995ead2cbeb88cc6e288f952cc6d4950ce0cb2b-normalized-v1.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "790b4f6aae8bdb8ff79791f35805d9b4ef56d60bd925ed1c526a7ce08f6fdeff",
+      "source_sha256": "b14e1d69c08c0916332ea42d3995ead2cbeb88cc6e288f952cc6d4950ce0cb2b",
+      "alt": "Invented pond illustration"
+    }
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "kind": "cover",
+      "subject": "Small days, big stories",
+      "caption": "A wholly invented sample book",
+      "images": [
+        {
+          "id": "lighthouse-placement",
+          "asset": "lighthouse"
+        }
+      ],
+      "fontSize": 20,
+      "titleSize": 36,
+      "options": [
+        {
+          "id": "option-1",
+          "text": "A wholly invented sample book"
+        },
+        {
+          "id": "option-2",
+          "text": "Six little scenes, one new adventure"
+        }
+      ]
+    },
+    {
+      "id": "hello",
+      "kind": "text",
+      "subject": "A book begins with a little looking.",
+      "caption": "A garden. A bicycle. A balloon going nowhere in particular.\n\nThese illustrations and words were made for this example. Try a caption, add a note, and make this copy your own.",
+      "images": [],
+      "fontSize": 22,
+      "titleSize": 32,
+      "options": [
+        {
+          "id": "option-1",
+          "text": "A garden. A bicycle. A balloon going nowhere in particular.\n\nThese illustrations and words were made for this example. Try a caption, add a note, and make this copy your own."
+        }
+      ]
+    },
+    {
+      "id": "sky",
+      "kind": "mosaic",
+      "subject": "Up, up, and a little farther",
+      "caption": "The balloon takes the scenic route. The fox approves.",
+      "images": [
+        {
+          "id": "balloon-placement",
+          "asset": "balloon"
+        },
+        {
+          "id": "fox-placement",
+          "asset": "fox"
+        }
+      ],
+      "fontSize": 22,
+      "titleSize": 30,
+      "options": [
+        {
+          "id": "option-1",
+          "text": "The balloon takes the scenic route. The fox approves."
+        },
+        {
+          "id": "option-2",
+          "text": "Some mornings deserve a longer look."
+        },
+        {
+          "id": "option-3",
+          "text": "Two quiet explorers, each with a different view."
+        },
+        {
+          "id": "option-4",
+          "text": "No timetable. Just a very good sky."
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "kind": "rows",
+      "subject": "A day in the garden",
+      "caption": "A little growing, a little going, and a place to rest.",
+      "images": [
+        {
+          "id": "greenhouse-placement",
+          "asset": "greenhouse"
+        },
+        {
+          "id": "bicycle-placement",
+          "asset": "bicycle"
+        },
+        {
+          "id": "pond-placement",
+          "asset": "pond"
+        }
+      ],
+      "band": "overlay",
+      "fontSize": 20,
+      "titleSize": 32,
+      "rows": [
+        {
+          "height": 384,
+          "images": [
+            "greenhouse-placement"
+          ]
+        },
+        {
+          "height": 192,
+          "images": [
+            "bicycle-placement",
+            "pond-placement"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "option-1",
+          "text": "A little growing, a little going, and a place to rest."
+        },
+        {
+          "id": "option-2",
+          "text": "The flowers have plans. The bicycle is available."
+        },
+        {
+          "id": "option-3",
+          "text": "Today we took the slow road home."
+        }
+      ]
+    },
+    {
+      "id": "collection",
+      "kind": "mosaic",
+      "subject": "Small things worth keeping",
+      "caption": "Six scenes, a few good words, and room for the next story.",
+      "images": [
+        {
+          "id": "greenhouse-placement",
+          "asset": "greenhouse"
+        },
+        {
+          "id": "balloon-placement",
+          "asset": "balloon"
+        },
+        {
+          "id": "lighthouse-placement",
+          "asset": "lighthouse"
+        },
+        {
+          "id": "bicycle-placement",
+          "asset": "bicycle"
+        },
+        {
+          "id": "fox-placement",
+          "asset": "fox"
+        },
+        {
+          "id": "pond-placement",
+          "asset": "pond"
+        }
+      ],
+      "fontSize": 20,
+      "titleSize": 30,
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Six scenes, a few good words, and room for the next story."
+        },
+        {
+          "id": "option-2",
+          "text": "Ordinary days can fill a very good book."
+        },
+        {
+          "id": "option-3",
+          "text": "We kept the bits that made us look twice."
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "cover-bike",
+      "kind": "cover",
+      "subject": "Small days, big stories",
+      "caption": "Cover idea: a slower pace",
+      "images": [
+        {
+          "id": "bicycle-placement",
+          "asset": "bicycle"
+        }
+      ],
+      "cropLimit": 0.5,
+      "fontSize": 20,
+      "titleSize": 36
+    },
+    {
+      "id": "cover-fox",
+      "kind": "cover",
+      "subject": "Small days, big stories",
+      "caption": "Cover idea: a different view",
+      "images": [
+        {
+          "id": "fox-placement",
+          "asset": "fox"
+        }
+      ],
+      "cropLimit": 0.5,
+      "fontSize": 20,
+      "titleSize": 36
+    }
+  ]
+}

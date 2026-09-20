@@ -1,0 +1,26 @@
+[
+  {
+    "path": "src/photobook_workshop/fonts/Baloo2.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/baloo2/Baloo2%5Bwght%5D.ttf",
+    "sha256": "d47a6852548059b1db49a1319d06d499d546c3fa2237cf9eee9c43c8abb025c2",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "path": "src/photobook_workshop/fonts/baloo2-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/baloo2/OFL.txt",
+    "sha256": "ad09b05dc8bc678c9daf7c4c5f7ef1f55e5726127f4330b2e98e40b9dffcb860",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "path": "src/photobook_workshop/fonts/Fredoka.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/Fredoka%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "path": "src/photobook_workshop/fonts/fredoka-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/fredoka/OFL.txt",
+    "sha256": "5c9e7eee5c6b25f4b05b8d53b2e470ea4962f9ced742d044a98f7d95d1375bab",
+    "license": "SIL Open Font License 1.1"
+  }
+]

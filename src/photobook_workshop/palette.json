@@ -1,0 +1,14 @@
+{
+  "dark_teal": "#1a3d6d",
+  "body_text": "#4a4a4a",
+  "content_box_bg": "#f8fafc",
+  "confidence_med": "#fce5cd",
+  "separator": "#c4cdd6",
+  "section_bar": "#4a86c8",
+  "green": "#27763d",
+  "red": "#c0392b",
+  "dri_box_bg": "#e1ecf7",
+  "teal": "#2d6cb4",
+  "confidence_high": "#d4edda",
+  "green_light": "#5daa68"
+}
