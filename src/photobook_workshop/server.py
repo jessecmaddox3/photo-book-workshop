@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import json
 import mimetypes
+import socket
 import threading
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -17,6 +18,18 @@ from .proof import build_book, colors
 from .review_store import ReviewStore, Conflict
 
 PACKAGE = Path(__file__).resolve().parent
+
+
+class LocalReviewServer(ThreadingHTTPServer):
+    # Windows SO_REUSEADDR can admit another live listener on the same address.
+    # Claim the port exclusively there; POSIX reuse supports normal restarts.
+    allow_reuse_address = not hasattr(socket, "SO_EXCLUSIVEADDRUSE")
+    allow_reuse_port = False
+
+    def server_bind(self):
+        if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
 
 
 def make_server(book_path, workspace, *, port=0):
@@ -295,7 +308,7 @@ def make_server(book_path, workspace, *, port=0):
                 )
             port = saved["port"]
         try:
-            server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+            server = LocalReviewServer(("127.0.0.1", port), Handler)
         except OSError as error:
             raise OSError(
                 "The saved review address is unavailable. Close another instance using this workspace, or free its port, then retry. No new address was chosen; pending browser drafts stay at the original address."
