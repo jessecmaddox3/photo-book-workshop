@@ -53,17 +53,34 @@ jobs:
           from pathlib import Path
           root=Path(os.environ['RUNNER_TEMP'])
           with zipfile.ZipFile(root/'source.zip') as archive: archive.extractall(root/'downloaded folder')
-      - name: Run the downloaded launcher
+      - name: Run the downloaded Windows launcher
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: |
+          cd /d "%RUNNER_TEMP%\downloaded folder\photo-book-workshop-1.0.0"
+          call Start.cmd --demo-only --directory "%RUNNER_TEMP%\launcher-demo"
+      - name: Run the downloaded Mac or Linux launcher
+        if: runner.os != 'Windows'
         shell: bash
         run: |
           cd "$RUNNER_TEMP/downloaded folder/photo-book-workshop-1.0.0"
-          if [ "$RUNNER_OS" = "Windows" ]; then
-            cmd.exe /c 'Start.cmd --demo-only --directory "%RUNNER_TEMP%\launcher-demo"'
-          elif [ "$RUNNER_OS" = "macOS" ]; then
+          if [ "$RUNNER_OS" = "macOS" ]; then
             bash Start.command --demo-only --directory "$RUNNER_TEMP/launcher-demo"
           else
             sh Start.sh --demo-only --directory "$RUNNER_TEMP/launcher-demo"
           fi
+      - name: Verify the launcher really built the complete example
+        shell: python
+        run: |
+          import os, json, sqlite3
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'launcher-demo'
+          assert (root/'first-proof/book-proof.pdf').stat().st_size > 100000
+          ledger=json.loads((root/'first-proof/proof-ledger.json').read_text(encoding='utf-8'))
+          assert len(ledger['pdf']['pages']) == 5 and len(ledger['html']['pages']) == 7
+          with sqlite3.connect(root/'catalog.sqlite3') as db:
+              assert db.execute("SELECT COUNT(*) FROM photos WHERE status='captioned'").fetchone()[0] == 6
+          print('Verified six captioned example images, five PDF pages and seven HTML pages.')
   browser:
     runs-on: ubuntu-latest
     steps:
